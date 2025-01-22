@@ -1,0 +1,181 @@
+.group-icon {
+    position: absolute;
+    height: 60.16%;
+    width: 72.55%;
+    top: 28.59%;
+    right: 0.01%;
+    bottom: 11.25%;
+    left: 27.44%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-icon1 {
+    position: absolute;
+    height: 100%;
+    width: 23.02%;
+    top: 0%;
+    right: 76.98%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+.frame {
+    align-self: stretch;
+    position: relative;
+    height: 76.8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.div {
+    position: relative;
+}
+.round-phone-24px-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+.phone {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.round-local-printshop-24px-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    object-fit: cover;
+}
+.parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 124px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.fax {
+    width: 125px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.phone-parent {
+    width: 277px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.facebook-icon {
+    position: absolute;
+    height: 75%;
+    width: 75%;
+    top: 12.5%;
+    right: 12.5%;
+    bottom: 12.5%;
+    left: 12.5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.facebook-black1-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+}
+.social-media {
+    position: relative;
+    opacity: 0.7;
+    mix-blend-mode: normal;
+}
+.information {
+    width: 282px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 28px 121px;
+}
+.frame-group {
+    width: 311.8px;
+    background-color: #00008d;
+    border-top: 1px solid #d0d5dd;
+    border-bottom: 1px solid #d0d5dd;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 16px;
+    gap: 64px;
+}
+.contact-us {
+    position: relative;
+    text-transform: uppercase;
+}
+.contact-us-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+.copyright-2018 {
+    align-self: stretch;
+    position: relative;
+    text-align: center;
+    opacity: 0.7;
+    mix-blend-mode: normal;
+}
+.frame-container {
+    align-self: stretch;
+    border-top: 1px solid #d0d5dd;
+    border-bottom: 1px solid #d0d5dd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 0px;
+    gap: 16px;
+}
+.frame-parent {
+    width: 100%;
+    position: relative;
+    background-color: #00008d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px;
+    box-sizing: border-box;
+    gap: 54px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    font-family: Assistant;
+}
+

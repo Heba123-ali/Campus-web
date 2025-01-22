@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/mentor.css" />
+    <title>managment Profile</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="top-nav" class="container">
+          <img class="logo-img" src="../images/logo.svg" alt="logo" />
+
+          <ul>
+            <li><a href="../index.html">الرئيسيه</a></li>
+            <li><a href="coach.html" class="p-active">الموجهين</a></li>
+            <li><a href="../index.html">الحساب الشخصي</a></li>
+          </ul>
+          <button>تسجيل الخروج</button>
+
+          <img id="bar" src="../images/textalign-justifycenter.svg" alt="" />
+        </div>
+        <hr />
+        <div id="bottom-nav" class="container">
+          <ul>
+            <li><a href="../index.html">معلومات شخصيه</a></li>
+            <li><a href="management.html" class="s-active">اداره جلسات</a></li>
+            <li><a href="rating.html">التقييمات</a></li>
+          </ul>
+        </div>
+        <hr />
+      </nav>
+      <nav id="mobile-nav">
+        <ul>
+          <li><a href="index.html">الرئيسيه</a></li>
+          <li><a href="#">الموجهين</a></li>
+          <li><a href="#">الحساب الشخصي</a></li>
+        </ul>
+        <button>تسجيل الخروج</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container hero-content">
+          <div class="progress-container">
+            <figure class="progress-circle" id="progress-circle">
+              <img src="../images/person1.png" alt="" />
+            </figure>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              id="progress-range"
+            />
+          </div>
+          <div class="content">
+            <h1>هشام احمد</h1>
+            <h2>UI\UX Designer and Developer</h2>
+            <div class="prson-info">
+              <ul dir="ltr">
+                <li>
+                  HeshamAmhed @gmail.com <img src="../images/sms.svg" alt="" />
+                </li>
+                <li id="info-address">
+                  مصر , المنيا <img src="../images/location-minus.svg" alt="" />
+                </li>
+              </ul>
+              <b class="rating" id="circleText" dir="ltr"
+                >4.5 <img src="../images/star.svg" alt=""
+              /></b>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="social-contact" dir="ltr">
+              <img src="../images/facebook.svg" alt="" />
+              <img src="../images/gmail.svg" alt="" />
+              <img src="../images/linkedin.svg" alt="" />
+              <img src="../images/baseline-star.svg" alt="" />
+            </div>
+            <div class="btn-contact">
+              <button id="btn-message">
+                <img src="../images/messages-3.svg" alt="" />الرسائل
+              </button>
+              <button id="btn-share">
+                <img
+                  src="../images/material-symbols_share.svg"
+                  alt=""
+                />المشاركه
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2 class="section-title">الجلسات المعلقة</h2>
+          <div class="card">
+            <div class="title">
+              <div class="details">
+                لديك جلسة مع <a href="coach.html">إيمان عبدالله</a>
+              </div>
+              <div class="details-icon">
+                التفاصيل
+                <img src="/images/arrow-left.svg" alt="add icon" />
+              </div>
+            </div>
+            <div class="meta">
+              <img src="/images/calendar.svg" alt="" />السبت، 10 يناير
+              <img src="/images/timer.svg" alt="" /> - 3:30 مساءً
+            </div>
+            <div class="actions">
+              <button class="btn-message">إرسال رسالة</button>
+              <button class="btn-edit">تغيير الموعد</button>
+              <button class="btn-cancel">إلغاء الجلسة</button>
+            </div>
+          </div>
+
+          <h2 class="section-title">الجلسات المحجوزة</h2>
+          <div class="card">
+            <div class="title">
+              <div class="details">
+                لديك جلسة مع <a href="coach.html">إيمان عبدالله</a>
+              </div>
+              <div class="details-icon">
+                التفاصيل
+                <img src="/images/arrow-left.svg" alt="add icon" />
+              </div>
+            </div>
+
+            <div class="meta">
+              <img src="/images/calendar.svg" alt="" />السبت، 10 يناير
+              <img src="/images/timer.svg" alt="" /> - 3:30 مساءً
+            </div>
+            <div class="actions">
+              <button class="btn-start">بدء الجلسة</button>
+              <button class="btn-message">إرسال رسالة</button>
+              <button class="btn-edit">تغيير الموعد</button>
+              <button class="btn-cancel">إلغاء الجلسة</button>
+            </div>
+          </div>
+
+          <h2 class="section-title">الجلسات التي تم إلغاؤها</h2>
+          <div class="card">
+            <div class="title">
+              <div class="details">
+                لديك جلسة مع <a href="coach.html">إيمان عبدالله</a>
+              </div>
+              <div class="details-icon">
+                التفاصيل
+                <img src="/images/arrow-left.svg" alt="add icon" />
+              </div>
+            </div>
+            <div class="meta">
+              <img src="/images/calendar.svg" alt="" />السبت، 10 يناير
+              <img src="/images/timer.svg" alt="" /> - 3:30 مساءً
+            </div>
+            <div class="actions">
+              <button class="btn-message">ارسال رساله</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="../mentor.js"></script>
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="listicon mm">
+        <img class="imgL" src="./imags/textalign-justifycenter.svg" alt="" />
+      </div>
+      <div class="butonshedden">
+        <div class="join">
+          <!-- <button class="b1">إنشاء حساب</button> -->
+          <button class="b2">تسجيل الخروج</button>
+        </div>
+      </div>
+
+      <div class="innerNav">
+        <div class="link">
+          <ul>
+            <li><a href="#">الحساب الشخصي</a></li>
+            <li><a href="#"> الموجهين</a></li>
+            <!-- <li><a href="#"> مجالاتنا</a></li> -->
+            <li class="check"><a href="#">من نحن</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <img class="logo mm" src="./imags/Frame.svg" alt="" />
+    </div>
+
+    <section class="search">
+      <!-- <div class="main-container"> -->
+      <div class="filter-container">
+        <div class="filter-text">فلتر</div>
+        <div class="icon-container">
+          <img
+            class="image"
+            src="./imags/mage_filter (2).svg"
+            alt=""
+            id="toggleDropdown"
+          />
+        </div>
+        <div class="dropdown-list open">
+          <div class="dropdown-menu1 dropdown-menuformat">
+            <a href="#"
+              ><span id="langA"
+                ><img class="rotate" src="./imags/arrow-up.svg" alt=""
+              /></span>
+              اللغة</a
+            >
+            <div class="dropdown-menu2 dropdown-menuformat">
+              <a href="#">
+                الأنجليزية <input type="checkbox" name="" id="checkbox"
+              /></a>
+              <a href="#">
+                الفرنسية <input type="checkbox" name="" id="checkbox"
+              /></a>
+              <a href="#">
+                الألمانية <input type="checkbox" name="" id="checkbox"
+              /></a>
+            </div>
+            <a href="#"
+              ><span id="A2"
+                ><img class="rotate" src="./imags/arrow-up.svg" alt=""
+              /></span>
+              الخبرة</a
+            >
+            <div class="dropdown-menu3 dropdown-menuformat">
+              <a href="#">
+                من 1 الي 3<input type="checkbox" name="" id="checkbox"
+              /></a>
+              <a href="#">
+                من 3 الي 5<input type="checkbox" name="" id="checkbox"
+              /></a>
+              <a href="#">
+                من 5 الي 7<input type="checkbox" name="" id="checkbox"
+              /></a>
+            </div>
+            <a href="#"
+              ><span id="A3"
+                ><img class="rotate" src="./imags/arrow-up.svg" alt=""
+              /></span>
+              المجال</a
+            >
+            <div class="dropdown-menu4 dropdown-menuformat start">
+              <a href="#"
+                ><img src="./imags/arrow-down.svg" alt="" /> front-end<input
+                  type="checkbox"
+                  name=""
+                  id="checkbox"
+              /></a>
+              <a href="#"
+                ><img src="./imags/arrow-down.svg" alt="" /> back-end<input
+                  type="checkbox"
+                  name=""
+                  id="checkbox"
+              /></a>
+              <a href="#"
+                ><img src="./imags/arrow-down.svg" alt="" /> full-stuck<input
+                  type="checkbox"
+                  name=""
+                  id="checkbox"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="البحث" />
+        <span class="search-icon">
+          <img src="./imags/ri_search-line (1).svg" alt="" />
+        </span>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <!-- ***** -->
+    <div class="container">
+      <div class="visible-container">
+        <div class="row">
+          <div class="card">
+            <div class="card-text">التسويق</div>
+          </div>
+          <div class="card">
+            <div class="card-text">التسويق</div>
+          </div>
+          <div class="card">
+            <div class="card-text">التسويق</div>
+          </div>
+          <div class="card">
+            <div class="card-text">التسويق</div>
+          </div>
+          <div class="card">
+            <div class="card-text">التسويق</div>
+          </div>
+          <div class="card">
+            <div class="card-text">التسويق</div>
+          </div>
+          <div class="card" id="heddencards">
+            <div class="card-text">التسويق</div>
+          </div>
+          <div class="card" id="heddencards">
+            <div class="card-text">البرمجة</div>
+          </div>
+          <div class="special card" id="heddencards">
+            <div class="card-text">التصميم</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrows-container">
+        <div class="arrow arrow-left">
+          <button style="background-color: white; border: none">
+            <img src=".//imags/arrow-left.svg" alt="" />
+          </button>
+        </div>
+        <div class="arrow arrow-right">
+          <button style="background-color: white; border: none">
+            <img src=".//imags/arrow-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .container {
+        width: 100%;
+      }
+
+      .visible-container {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .row {
+        display: flex;
+        gap: 24px;
+        transition: transform 0.3s ease;
+      }
+
+      .card {
+        flex: 0 0 calc((100% - 120px) / 6);
+        padding: 12.5px 50.519px 11.5px 51.481px;
+        border-radius: 10px;
+        border: 3px solid #d0d5dd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card-text {
+        text-align: right;
+        color: #344054;
+        font-size: 32px;
+        font-family: "Baloo Bhaijaan 2";
+        font-weight: 400;
+        line-height: 36px;
+        word-wrap: break-word;
+        cursor: pointer;
+      }
+
+      .special {
+        background: #00008d;
+        border: 3px solid transparent;
+      }
+
+      .special .card-text {
+        color: white;
+        font-weight: 600;
+      }
+
+      .arrows-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.11vw;
+        margin-top: 20px;
+      }
+
+      /* @media (max-width: 858px) {
+      .row {
+        gap: 8px;
+      }
+      .card {
+        flex: 0 0 calc((100% - 40px) / 6);
+      }
+    } */
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const row = document.querySelector(".row");
+        const leftBtn = document.querySelector(".arrow-left button");
+        const rightBtn = document.querySelector(".arrow-right button");
+
+        let currentPosition = 0;
+        const cardWidth = document.querySelector(".card").offsetWidth + 24;
+        const visibleCards = 6;
+        const totalCards = document.querySelectorAll(".card").length;
+        const maxScroll = -(totalCards - visibleCards) * cardWidth;
+
+        leftBtn.addEventListener("click", () => {
+          if (currentPosition > maxScroll) {
+            currentPosition -= cardWidth;
+            row.style.transform = `translateX(${currentPosition}px)`;
+          }
+        });
+
+        rightBtn.addEventListener("click", () => {
+          if (currentPosition < 0) {
+            currentPosition += cardWidth;
+            row.style.transform = `translateX(${currentPosition}px)`;
+          }
+        });
+      });
+    </script>
+    <!-- $$$$$$$$$ -->
+
+    <div class="H-con">
+      <p class="suggested">موجهين مقترحين</p>
+
+      <div class="con">
+        <div class="card1 cardformat">
+          <div class="profile-header">
+            <div class="containerC">
+              <svg viewBox="0 0 200 200" class="CIRCLE">
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="95"
+                  class="circle"
+                  id="circle1"
+                ></circle>
+              </svg>
+            </div>
+
+            <img src="./imags/Frame 2306.png" alt="" class="profile-image" />
+          </div>
+
+          <div class="ratting">
+            <div class="rat">
+              <span id="ratingValue1">0</span>
+              <img src="./imags/material-symbols_star-rounded.svg" alt="" />
+            </div>
+            <img src="./imags/material-symbols_favorite-outline.svg" alt="" />
+          </div>
+          <div class="text">
+            <h2 class="name">محمد مصطفى</h2>
+            <div class="title">التسويق</div>
+
+            <p class="description">
+              ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+          </div>
+          <div class="more-button">
+            <img src="Vector-left.svg" alt="Vector" class="Vector" />
+            <p class="more-text">المزيد</p>
+          </div>
+        </div>
+
+        <div class="card2 cardformat">
+          <div class="profile-header">
+            <div class="containerC">
+              <svg viewBox="0 0 200 200" class="CIRCLE">
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="95"
+                  class="circle"
+                  id="circle2"
+                ></circle>
+              </svg>
+            </div>
+
+            <img src="./imags/Frame 2306.png" alt="" class="profile-image" />
+          </div>
+
+          <div class="ratting">
+            <div class="rat">
+              <span id="ratingValue2">0</span>
+              <img src="./imags/material-symbols_star-rounded.svg" alt="" />
+            </div>
+            <img src="./imags/material-symbols_favorite-outline.svg" alt="" />
+          </div>
+          <div class="text">
+            <h2 class="name">محمد مصطفى</h2>
+            <div class="title">التسويق</div>
+
+            <p class="description">
+              ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+          </div>
+          <div class="more-button">
+            <img src="Vector-left.svg" alt="Vector" class="Vector" />
+            <p class="more-text">المزيد</p>
+          </div>
+        </div>
+
+        <div class="card3 cardformat">
+          <div class="profile-header">
+            <div class="containerC">
+              <svg viewBox="0 0 200 200" class="CIRCLE">
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="95"
+                  class="circle"
+                  id="circle3"
+                ></circle>
+              </svg>
+            </div>
+
+            <img src="./imags/Frame 2306.png" alt="" class="profile-image" />
+          </div>
+
+          <div class="ratting">
+            <div class="rat">
+              <span id="ratingValue3">0</span>
+              <img src="./imags/material-symbols_star-rounded.svg" alt="" />
+            </div>
+            <img src="./imags/material-symbols_favorite-outline.svg" alt="" />
+          </div>
+          <div class="text">
+            <h2 class="name">محمد مصطفى</h2>
+            <div class="title">التسويق</div>
+
+            <p class="description">
+              ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+          </div>
+          <div class="more-button">
+            <img src="Vector-left.svg" alt="Vector" class="Vector" />
+            <p class="more-text">المزيد</p>
+          </div>
+        </div>
+        <div class="card4 cardformat">
+          <div class="profile-header">
+            <div class="containerC">
+              <svg viewBox="0 0 200 200" class="CIRCLE">
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="95"
+                  class="circle"
+                  id="circle4"
+                ></circle>
+              </svg>
+            </div>
+
+            <img src="./imags/Frame 2306.png" alt="" class="profile-image" />
+          </div>
+
+          <div class="ratting">
+            <div class="rat">
+              <span id="ratingValue4">0</span>
+              <img src="./imags/material-symbols_star-rounded.svg" alt="" />
+            </div>
+            <img src="./imags/material-symbols_favorite-outline.svg" alt="" />
+          </div>
+          <div class="text">
+            <h2 class="name">محمد مصطفى</h2>
+            <div class="title">التسويق</div>
+
+            <p class="description">
+              ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+          </div>
+          <div class="more-button">
+            <img src="./Vector-left.svg" alt="Vector" class="Vector" />
+            <p class="more-text">المزيد</p>
+          </div>
+        </div>
+
+        <div class="card5 cardformat">
+          <div class="profile-header">
+            <div class="containerC">
+              <svg viewBox="0 0 200 200" class="CIRCLE">
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="95"
+                  class="circle"
+                  id="circle5"
+                ></circle>
+              </svg>
+            </div>
+
+            <img src="./imags/Frame 2306.png" alt="" class="profile-image" />
+          </div>
+
+          <div class="ratting">
+            <div class="rat">
+              <span id="ratingValue5">0</span>
+              <img src="./imags/material-symbols_star-rounded.svg" alt="" />
+            </div>
+            <img src="./imags/material-symbols_favorite-outline.svg" alt="" />
+          </div>
+          <div class="text">
+            <h2 class="name">محمد مصطفى</h2>
+            <div class="title">التسويق</div>
+
+            <p class="description">
+              ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+          </div>
+          <div class="botton-con">
+            <div class="more-button">
+              <img src="Vector-left.svg" alt="Vector" class="Vector" />
+              <p class="more-text">المزيد</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card6 cardformat">
+          <div class="profile-header">
+            <div class="containerC">
+              <svg viewBox="0 0 200 200" class="CIRCLE">
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="95"
+                  class="circle"
+                  id="circle6"
+                ></circle>
+              </svg>
+            </div>
+
+            <img src="./imags/Frame 2306.png" alt="" class="profile-image" />
+          </div>
+
+          <div class="ratting">
+            <div class="rat">
+              <span id="ratingValue6">0</span>
+              <img src="./imags/material-symbols_star-rounded.svg" alt="" />
+            </div>
+            <img src="./imags/material-symbols_favorite-outline.svg" alt="" />
+          </div>
+          <div class="text">
+            <h2 class="name">محمد مصطفى</h2>
+            <div class="title">التسويق</div>
+
+            <p class="description">
+              ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+          </div>
+          <div class="more-button">
+            <img src="/imags/Vector-left.svg" alt="Vector" class="Vector" />
+            <p class="more-text">المزيد</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="home.js"></script>
+
+    <footer class="footer">
+      <hr />
+      <div class="section1F responsiveF">
+        <span class="RFL-S">
+          <div class="contact-info">
+            <div class="phone">
+              <span
+                >(123) 456-7890 <img src=".//imags/round-phone-24px.svg" alt=""
+              /></span>
+              <span
+                >(123) 456-7890
+                <img src="./imags/round-local-printshop-24px.svg" alt=""
+              /></span>
+            </div>
+
+            <div class="social-media">
+              <a href="#"><img src=".//imags/facebook black.1.svg" alt="" /></a>
+              <a href="#"><img src="./imags/linkedin black.1.svg" alt="" /></a>
+              <a href="#"><img src=".//imags/rss black.1.svg" alt="" /></a>
+              <a href="#"
+                ><img src=".//imags/googleplus black.1.svg" alt=""
+              /></a>
+              <span>: مواقع التواصل</span>
+            </div>
+          </div>
+          <div class="logoRFL">
+            <img src="./imags/rEL-LOGO.png" class="RFL" alt="" />
+          </div>
+        </span>
+        <div class="logo">
+          <img class="logoF" src=".//imags/footer-imag.png" alt="campus logo" />
+          <img class="cumpsF" src=".//imags/footerCaumps.png" alt="" />
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="copyright">
+          <p>Copyright © 2018 - Lift Media Inc.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">معلومات عنا</a>
+          <a href="#">سياسة الخصوصية</a>
+          <a href="#">ساعدني</a>
+          <a href="#">تواصل معنا</a>
+        </div>
+      </div>
+      <hr />
+    </footer>
+  </body>
+</html>
