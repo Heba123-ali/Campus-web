@@ -27,22 +27,7 @@ function showSlide(index) {
     left: -currentIndex * imageWidth,
     behavior: "smooth",
   });
-  // fieldsImages.forEach((e) => {
-  //   e.style.width = `237px`;
-  //   fieldsImages[currentIndex].style.width = `426px`;
-  // });
 }
-// fieldsImages.forEach((e) => {
-//   e.addEventListener("mouseover", () => {
-//     fieldsImages.forEach((ele) => (ele.style.width = `237px`));
-//     e.style.width = `426px`;
-//     console.log(e);
-//     document.querySelector(`.field-img`).style.width = "426px";
-
-// fieldPara.forEach((ele) => (ele.style.display = "none"));
-// document.querySelector(`.${e} .text p`).style.display = "block";
-//   });
-// });
 prevBtn.addEventListener("click", () => {
   showSlide((currentIndex -= 1));
 });
@@ -70,12 +55,12 @@ function showStory(index) {
     left: -currentStory * storyWidth,
     behavior: "smooth",
   });
-  story.forEach((e) => {
-    e.style.opacity = "0.6";
-    e.style.height = " 324px";
-  });
-  story[currentStory].style.opacity = "1";
-  story[currentStory].style.height = " 296px";
+  //   story.forEach((e) => {
+  //     e.style.opacity = "0.6";
+  //     e.style.height = " 324px";
+  //   });
+  //   story[currentStory].style.opacity = "1";
+  //   story[currentStory].style.height = " 296px";
 }
 prevStory.addEventListener("click", () => {
   showStory((currentStory -= 1));
@@ -97,3 +82,75 @@ setInterval(() => {
     .forEach((ele) => ele.classList.remove("hidden-images"));
 }, 2000);
 ///////////////////
+///////////////suggested-mentors//////////////
+const suggestedCards = document.querySelectorAll(".suggested-mentors .card");
+const rate = 0;
+
+suggestedCards.forEach((card, index) => {
+  const selectedCard = `.suggested-mentors .card:nth-of-type(${index + 1})`;
+  const heart = document.querySelectorAll(
+    `${selectedCard} > svg:nth-child(3) path `
+  );
+
+  heart.forEach((e) => {
+    e.addEventListener("click", () => {
+      e.getAttribute("fill") === "#fff"
+        ? e.setAttribute("fill", "#ff1d35")
+        : e.setAttribute("fill", "#fff");
+      e.getAttribute("stroke") === "#98A2B3"
+        ? e.setAttribute("stroke", "#ff1d35")
+        : e.setAttribute("stroke", "#98A2B3");
+    });
+  });
+
+  const circle = document.querySelectorAll(`${selectedCard} .prgress-circle`);
+  const stars = document.querySelectorAll(`${selectedCard} .stars svg`);
+  const starspath = document.querySelectorAll(
+    `${selectedCard} .stars svg path`
+  );
+  circle.forEach((circle) => {
+    stars.forEach((star, i) =>
+      star.addEventListener("click", () => {
+        starspath.forEach((path, n) => {
+          n <= i
+            ? path.setAttribute("fill", "#FFCF00")
+            : path.setAttribute("fill", "#D0D5DD");
+        });
+        let calcRate = (i + 1) * 20;
+        circle.setAttribute(
+          "stroke-dasharray",
+          `${calcRate}, ${100 - calcRate}`
+        );
+      })
+    );
+  });
+});
+const mentorsLandin = document.querySelector(`.suggested-mentors .cards`);
+const mentorLandin = document.querySelectorAll(
+  `.suggested-mentors .cards .card`
+);
+const prevmentor = document.querySelector(".right-mentor");
+const nextmentor = document.querySelector(".left-mentor");
+let currentMentor = 0;
+
+function showSlide(index) {
+  if (index >= mentorLandin.length) {
+    currentMentor = 0;
+  } else if (index < 0) {
+    currentMentor = mentorLandin.length - 1;
+  } else {
+    currentMentor = index;
+  }
+  const imageWidth = mentorLandin[currentMentor].clientWidth;
+  mentorsLandin.scrollTo({
+    left: -currentMentor * imageWidth,
+    behavior: "smooth",
+  });
+}
+prevmentor.addEventListener("click", () => {
+  showSlide((currentMentor -= 1));
+});
+nextmentor.addEventListener("click", () => {
+  showSlide((currentMentor += 1));
+});
+///////////////////////////////////////////
