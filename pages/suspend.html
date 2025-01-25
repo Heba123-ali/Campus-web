@@ -14,53 +14,56 @@
           <img class="logo-img" src="../images/logo.svg" alt="logo" />
 
           <ul>
-            <li><a href="../index.html">الرئيسيه</a></li>
-            <li><a href="coach.html">الموجهين</a></li>
-            <li><a href="../index.html">الحساب الشخصي</a></li>
+            <li><a href="../home.html">الرئيسيه</a></li>
+            <li><a href="./coach.html">الموجهين</a></li>
+            <li>
+              <a href="../profile-index.html" class="p-active">الحساب الشخصي</a>
+            </li>
           </ul>
-          <button>تسجيل الخروج</button>
+          <button type="submit">تسجيل الخروج</button>
 
-          <img id="bar" src="../images/textalign-justifycenter.svg" alt="" />
+          <img id="bar" src="./images/textalign-justifycenter.svg" alt="" />
         </div>
         <hr />
         <div id="bottom-nav" class="container">
           <ul>
-            <li><a href="../index.html">معلومات شخصيه</a></li>
             <li>
-              <a href="pages/management.html" class="s-active">اداره جلسات</a>
+              <a href="../profile-index.html" class="s-active">معلومات شخصيه</a>
             </li>
-            <li><a href="pages/rating.html">التقييمات</a></li>
+            <li><a href="./management.html">اداره جلسات</a></li>
+            <li><a href="./rating.html">التقييمات</a></li>
           </ul>
         </div>
         <hr />
       </nav>
       <nav id="mobile-nav">
         <ul>
-          <li><a href="../index.html">الرئيسيه</a></li>
-          <li><a href="coach.html">الموجهين</a></li>
-          <li><a href="../index.html">الحساب الشخصي</a></li>
+          <li><a href="../profile-index.html">الرئيسيه</a></li>
+          <li><a href="./coach.html">الموجهين</a></li>
+          <li><a href="../profile-index.html">الحساب الشخصي</a></li>
         </ul>
-        <button>تسجيل الخروج</button>
+        <button type="submit">تسجيل الخروج</button>
       </nav>
     </header>
 
     <main>
-      <section style="padding-top: 0px">
+      <section style="padding-top: 0px" class="section-coaching">
         <div>
           <div class="card">
             <div class="details">
               لديك جلسة مع <a href="coach.html">إيمان عبدالله</a>
             </div>
             <div class="meta">
-              <img src="../images/calendar.svg" alt="" />
-              السبت، 10 يناير
-              <img src="../images/timer.svg" alt="" /> - 3:30 مساءً
+              <img src="/images/calendar.svg" alt="" />السبت، 10 يناير
+              <img src="/images/timer.svg" alt="" /> - 3:30 مساءً
             </div>
             <div class="actions">
               <button class="btn-start">بدء الجلسة</button>
               <button class="btn-message">إرسال رسالة</button>
               <button class="btn-edit">تغيير الموعد</button>
-              <button class="btn-cancel">إلغاء الجلسة</button>
+              <button class="btn-cancel">
+                <a href="./cancel.html">إلغاء الجلسة</a>
+              </button>
             </div>
           </div>
         </div>
@@ -71,6 +74,7 @@
             <div class="coach-info">
               <h3>إيمان عبدالله محمد</h3>
               <p>UI/UX Designer</p>
+              <!-- <b class="rating" dir="ltr"><p style="color: black;">4.5</p> ★</b> -->
             </div>
           </div>
 
@@ -97,5 +101,5 @@
       </section>
     </main>
   </body>
-  <script src="../mentor.js"></script>
+  <script src="../index.js"></script>
 </html>

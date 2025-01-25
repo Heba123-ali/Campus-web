@@ -293,3 +293,19 @@ body {
     margin: 4.26vw;
   }
 }
+.exist {
+  color: var(--Gray700, #344054);
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.exist .log-in {
+  color: var(--Gray-900, #101828);
+  font-family: "Baloo Bhaijaan 2";
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -1,10 +1,13 @@
 document
   .querySelector(".sign-up-btn")
-  .addEventListener("click", () => (window.location.href = "sign-up.html"));
+  .addEventListener("click", () => (window.location.href = "./sign-up.html"));
+document
+  .querySelector(".log-in-btn")
+  .addEventListener("click", () => (window.location.href = "./log-in.html"));
 
 document
   .querySelector(".logo")
-  .addEventListener("click", () => (window.location.href = "landing.html"));
+  .addEventListener("click", () => (window.location.href = "./home.html"));
 ////////////////////////////////
 const fields = document.querySelector(`.fields-images`);
 const fieldsImages = document.querySelectorAll(`.fields-images .field`);
@@ -18,7 +21,7 @@ function showSlide(index) {
   if (index >= fieldsImages.length) {
     currentIndex = 0;
   } else if (index < 0) {
-    currentIndex = fieldsImages.length - 1;
+    currentIndex <= fieldsImages.length - 1;
   } else {
     currentIndex = index;
   }
@@ -55,12 +58,12 @@ function showStory(index) {
     left: -currentStory * storyWidth,
     behavior: "smooth",
   });
-  //   story.forEach((e) => {
-  //     e.style.opacity = "0.6";
-  //     e.style.height = " 324px";
-  //   });
-  //   story[currentStory].style.opacity = "1";
-  //   story[currentStory].style.height = " 296px";
+  story.forEach((e) => {
+    e.style.opacity = "0.6";
+    e.style.height = " 324px";
+  });
+  story[currentStory].style.opacity = "1";
+  story[currentStory].style.height = " 296px";
 }
 prevStory.addEventListener("click", () => {
   showStory((currentStory -= 1));
@@ -86,13 +89,12 @@ setInterval(() => {
 const suggestedCards = document.querySelectorAll(".suggested-mentors .card");
 const rate = 0;
 
-suggestedCards.forEach((card, index) => {
-  const selectedCard = `.suggested-mentors .card:nth-of-type(${index + 1})`;
-  const heart = document.querySelectorAll(
+suggestedCards.forEach((card, num) => {
+  const selectedCard = `.suggested-mentors .card:nth-of-type(${num + 1})`;
+  const hearts = document.querySelectorAll(
     `${selectedCard} > svg:nth-child(3) path `
   );
-
-  heart.forEach((e) => {
+  hearts.forEach((e) => {
     e.addEventListener("click", () => {
       e.getAttribute("fill") === "#fff"
         ? e.setAttribute("fill", "#ff1d35")
@@ -133,7 +135,7 @@ const prevmentor = document.querySelector(".right-mentor");
 const nextmentor = document.querySelector(".left-mentor");
 let currentMentor = 0;
 
-function showSlide(index) {
+function showMentor(index) {
   if (index >= mentorLandin.length) {
     currentMentor = 0;
   } else if (index < 0) {
@@ -148,9 +150,9 @@ function showSlide(index) {
   });
 }
 prevmentor.addEventListener("click", () => {
-  showSlide((currentMentor -= 1));
+  showMentor((currentMentor -= 1));
 });
 nextmentor.addEventListener("click", () => {
-  showSlide((currentMentor += 1));
+  showMentor((currentMentor += 1));
 });
 ///////////////////////////////////////////

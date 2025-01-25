@@ -54,15 +54,15 @@ nextBtn.addEventListener("click", () => {
   document.querySelector(".sign-up1").classList.add("heddin-form");
 });
 signUpForm.addEventListener("submit", (e) => {
-  if (
-    !userName.value ||
-    !userEmail.value ||
-    !userPass.value ||
-    !userPhone.value ||
-    !userPassConfirm.value
-  ) {
-    e.preventDefault();
-  }
+  // if (
+  //   !userName.value ||
+  //   !userEmail.value ||
+  //   !userPass.value ||
+  //   !userPhone.value ||
+  //   !userPassConfirm.value
+  // ) {
+  //   e.preventDefault();
+  // }
   if (
     usercountry.value.length < 3 ||
     !userexperience.value ||
@@ -72,5 +72,8 @@ signUpForm.addEventListener("submit", (e) => {
   ) {
     alert("يرجى اكمال و كتابه البيانات بشكل صحيح");
     e.preventDefault();
+  }
+  if (!e.defaultPrevented) {
+    window.location.href = "/home.html";
   }
 });
