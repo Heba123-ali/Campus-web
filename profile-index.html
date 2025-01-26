@@ -52,10 +52,20 @@
       <section id="hero">
         <div class="container hero-content">
           <div class="progress-container">
-            <figure class="progress-circle" id="progress-circle">
-              <img src="./images/person1.png" alt="" />
-            </figure>
-          </div>
+            <figure class="image-rating">
+                <img src="images/person1.png" alt="Person Image">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="260px" height="260px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#00008d" />
+                      <stop offset="100%" stop-color="#00008d" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="130" cy="130" r="110" stroke="url(#GradientColor)" stroke-linecap="round" />
+                </svg>
+              </figure>
+        
+    </div>
           <div class="content">
             <h1>هشام احمد</h1>
             <h2>UI\UX Designer and Developer</h2>
@@ -68,9 +78,8 @@
                   مصر , المنيا <img src="./images/location-minus.svg" alt="" />
                 </li>
               </ul>
-              <b class="rating" id="circleText" dir="ltr"
-                >4.5 <img src="./images/star.svg" alt=""
-              /></b>
+              <div id="number">4.5 <img src="./images/star.svg" alt=""></div>
+
             </div>
           </div>
           <div class="contact">

@@ -1,126 +1,124 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/mentor.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mentor.css">
     <title>rating Profile</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav>
-        <div id="top-nav" class="container">
-          <img class="logo-img" src="../images/logo.svg" alt="logo" />
+        <nav>
+            <div id="top-nav" class="container">
+                <img class="logo-img" src="../images/logo.svg" alt="logo">
 
-          <ul>
-            <li><a href="../home.html">الرئيسيه</a></li>
-            <li><a href="./coach.html">الموجهين</a></li>
-            <li>
-              <a href="../profile-index.html" class="p-active">الحساب الشخصي</a>
-            </li>
-          </ul>
-          <button type="submit">تسجيل الخروج</button>
+                <ul>
+                    <li> <a href="../profile-index.html">الرئيسيه</a></li>
+                    <li><a href="#">الموجهين</a></li>
+                    <li><a href="../profile-index.html" class="p-active">الحساب الشخصي</a></li>
+                </ul>
+                <button type="submit">تسجيل الخروج</button>
 
-          <img id="bar" src="../images/textalign-justifycenter.svg" alt="" />
-        </div>
-        <hr />
-        <div id="bottom-nav" class="container">
-          <ul>
-            <li><a href="../profile-index.html">معلومات شخصيه</a></li>
-            <li><a href="./management.html">اداره جلسات</a></li>
-            <li><a href="./rating.html" class="s-active">التقييمات</a></li>
-          </ul>
-        </div>
-        <hr />
-      </nav>
-      <nav id="mobile-nav">
-        <ul>
-          <li><a href="../profile-index.html">الرئيسيه</a></li>
-          <li><a href="./coach.html">الموجهين</a></li>
-          <li><a href="../profile-index.html">الحساب الشخصي</a></li>
-        </ul>
-        <button type="submit">تسجيل الخروج</button>
-      </nav>
+
+                <img id="bar" src="../images/textalign-justifycenter.svg" alt="">
+
+            </div>
+            <hr>
+            <div id="bottom-nav" class="container">
+                <ul>
+                    <li><a href="../profile-index.html">معلومات شخصيه</a></li>
+                    <li><a href="./management.html">اداره جلسات</a></li>
+                    <li><a href="./rating.html" class="s-active">التقييمات</a></li>
+                </ul>
+            </div>
+            <hr>
+        </nav>
+        <nav id="mobile-nav">
+            <ul>
+                <li> <a href="../profile-index.html">الرئيسيه</a></li>
+                <li><a href="#">الموجهين</a></li>
+                <li><a href="../profile-index.html" >الحساب الشخصي</a></li>
+            </ul>
+            <button type="submit">تسجيل الخروج</button>
+        </nav>
     </header>
 
     <main>
-      <section id="hero">
-        <div class="container hero-content">
-          <div class="progress-container">
-            <figure class="progress-circle" id="progress-circle">
-              <img src="../images/person1.png" alt="" />
-            </figure>
-          </div>
-          <div class="content">
-            <h1>هشام احمد</h1>
-            <h2>UI\UX Designer and Developer</h2>
-            <div class="prson-info">
-              <ul dir="ltr">
-                <li>
-                  HeshamAmhed @gmail.com <img src="../images/sms.svg" alt="" />
-                </li>
-                <li id="info-address">
-                  مصر , المنيا <img src="../images/location-minus.svg" alt="" />
-                </li>
-              </ul>
-              <b class="rating" id="circleText" dir="ltr"
-                >4.5 <img src="../images/star.svg" alt=""
-              /></b>
+        <section id="hero">
+            <div class="container hero-content">
+                <div class="progress-container">
+                    <figure class="image-rating">
+                        <img src="../images/person1.png" alt="Person Image">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="260px" height="260px">
+                          <defs>
+                            <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#00008d" />
+                              <stop offset="100%" stop-color="#00008d" />
+                            </linearGradient>
+                          </defs>
+                          <circle cx="130" cy="130" r="110" stroke="url(#GradientColor)" stroke-linecap="round" />
+                        </svg>
+                      </figure>
+                
             </div>
-          </div>
-          <div class="contact">
-            <div class="social-contact" dir="ltr">
-              <img src="../images/facebook.svg" alt="" />
-              <img src="../images/gmail.svg" alt="" />
-              <img src="../images/linkedin.svg" alt="" />
-              <img src="../images/baseline-star.svg" alt="" />
-            </div>
-            <div class="btn-contact">
-              <button id="btn-message">
-                <img src="../images/messages-3.svg" alt="" />الرسائل
-              </button>
-              <button id="btn-share">
-                <img
-                  src="../images/material-symbols_share.svg"
-                  alt=""
-                />المشاركه
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <h2 class="section-title">التقييمات</h2>
-          <div class="review-card">
-            <img src="../images/mentee.png" alt="معتصم شعبان" />
-            <div class="review-content">
-              <h4>معتصم شعبان</h4>
-              <div class="role">UI/UX Designer</div>
-              <div class="rating">★★★★★</div>
-              <p>
-                النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. لقد تم توليد هذا
-                النص من مواد النص العربي.
-              </p>
-            </div>
-          </div>
+                <div class="content">
+                    <h1>هشام احمد</h1>
+                    <h2>UI\UX Designer and Developer </h2>
+                    <div class="prson-info">
+                        <ul dir="ltr">
+                            <li >HeshamAmhed @gmail.com <img src="../images/sms.svg" alt=""></li>
+                            <li id="info-address">مصر , المنيا <img src="../images/location-minus.svg" alt=""></li>
+                        </ul>
+                        <div id="number">4.5 <img src="../images/star.svg" alt=""></div>
 
-          <div class="review-card">
-            <img src="../images/mentee.png" alt="معتصم شعبان" />
-            <div class="review-content">
-              <h4>معتصم شعبان</h4>
-              <div class="role">UI/UX Designer</div>
-              <div class="rating">★★★★★</div>
-              <p>
-                النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. لقد تم توليد هذا
-                النص من مواد النص العربي.
-              </p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="social-contact" dir="ltr">
+                        <img src="../images/facebook.svg" alt="">
+                        <img src="../images/gmail.svg" alt="">
+                        <img src="../images/linkedin.svg" alt="">
+                        <img src="../images/baseline-star.svg" alt="">
+                    </div>
+                    <div class="btn-contact">
+                        <button id="btn-message"><img src="../images/messages-3.svg" alt="">الرسائل</button>
+                        <button id="btn-share"> <img src="../images/material-symbols_share.svg" alt="">المشاركه</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="section-title">التقييمات</h2>
+                <div class="review-card">
+                    <img src="../images/mentee.png" alt="معتصم شعبان">
+                    <div class="review-content">
+                        <h4>معتصم شعبان</h4>
+                        <div class="role">UI/UX Designer</div>
+                        <div class="rating">★★★★★</div>
+                        <p>
+                            النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. لقد تم توليد هذا النص من مواد النص العربي.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <img src="../images/mentee.png" alt="معتصم شعبان">
+                    <div class="review-content">
+                        <h4>معتصم شعبان</h4>
+                        <div class="role">UI/UX Designer</div>
+                        <div class="rating">★★★★★</div>
+                        <p>
+                            النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. لقد تم توليد هذا النص من مواد النص العربي.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
-  <script src="../index.js"></script>
+</body>
+<script src="../index.js"></script>
+
 </html>

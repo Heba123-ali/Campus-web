@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Baloo Bhaijaan 2';
+    height: 100vh;
 }
 
 :root {
@@ -155,12 +156,6 @@ h2 {
 }
 
 
-#hero figure img {
-    border: 10px solid var(--second);
-    border-radius: 50%;
-    padding: 5px;
-}
-
 #hero ul {
     flex-direction: column;
     align-items: end;
@@ -173,6 +168,55 @@ h2 {
     align-items: center;
     gap: 10px;
 }
+
+figure.image-rating {
+    position: relative;
+    display: inline-block;
+    padding: 30px; /* زيادة المسافة بين الصورة والدائرة */
+  }
+
+  figure img {
+    width: 200px; /* حجم الصورة 200px */
+    height: 200px;
+    display: block;
+  }
+
+  figure svg {
+    position: absolute;
+    top: 0px;  /* بداية الدائرة من أعلى الصورة */
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); /* تحديد الموقع بشكل مركزي */
+    z-index: 10;
+    width: 260px;  /* زيادة حجم الـ svg ليشمل المسافة */
+    height: 260px;
+  }
+
+ figure circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 628;  /* محيط الدائرة بعد تعديل الحجم */
+    stroke-dashoffset: 628;
+    transition: stroke-dashoffset 0.5s ease;
+  }
+  #number{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .prson-info {
     display: flex;
@@ -388,7 +432,7 @@ button.show-more {
     justify-content: center;
     align-items: center;
     color: #667085;
-    margin-left: 1rem;
+    padding-left: 1.1rem;
 }
 .title{
     display: flex;
@@ -436,12 +480,9 @@ button.show-more {
     border: 1px solid #F9FAFB;
     padding: 4px 24px;
     font-size: 20px;
-}
-.card .actions .btn-cancel a{
     color: #ff1d35;
 
 }
-
 
 
 .card .actions .btn-edit {
@@ -545,7 +586,7 @@ button.show-more {
     border-bottom: 1px solid #ddd;
 }
 
-.coach img {
+.coach .coach-photo{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -554,6 +595,10 @@ button.show-more {
 
 .coach-info {
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .coach-info h3 {
@@ -585,7 +630,9 @@ button.show-more {
 .container h2{
     margin-right: 0rem;
 }
-
+.container .traner{
+    margin-right: 1.7rem;
+}
 
 #files{
     text-align: center;
@@ -696,6 +743,9 @@ button.show-more {
         font-size: 14px;
         width: 28%;
     }
+    .card .details-icon a{
+        padding-left: 0.9rem;
+    }
     
 /* -------------------------------------------------------------------------- */
 /*                                 Rating Page                                */
@@ -735,5 +785,15 @@ button.show-more {
     font-size: 14px;
 
 }
+
+/* -------------------------------------------------------------------------- */
+/*                               coACH / CANCEL / SUSPEND Page                                */
+/* -------------------------------------------------------------------------- */
+.section-coaching .card{
+    width: 100%;
+    padding-right: 2rem;
+
+}
+
 
 }
