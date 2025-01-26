@@ -5,34 +5,23 @@ bar.addEventListener("click", () => {
     mobileNav.classList.toggle("active");
 })
 
-//   // Trigger the hidden file input
-//   addEventListener('click' ,function triggerUpload() {
-//     const upload = document.getElementById('upload');
-//     upload.click();
-//   })
-//   // Handle the file upload
-// addEventListener('click', function handleFileUpload(event) {
-//     const file = event.target.files[0]; // Get the selected file
-//     const messageDiv = document.getElementById('message');
-//     if (file) {
-//         // Show a success message
-//         messageDiv.textContent = `File "${file.name}" uploaded successfully!`;
-//         console.log('Uploaded file details:', file);
-//     } else {
-//         // Reset the message if no file is selected
-//         messageDiv.textContent = '';
-//         alert('No file selected!');
-//     }
-// });
 
-const progressCircle = document.getElementById('progress-circle');
-const progressRange = document.getElementById('progress-range');
+    const circle = document.querySelector("circle");
 
-function updateProgress() {
-    const value = progressRange.value;
-    const degree = (value / 100) * 360;  // تحويل النسبة إلى درجات دائرة
-    progressCircle.style.backgroundImage = `conic-gradient(#00008d ${degree}deg, #ddd ${degree}deg)`;
-}
-progressRange.addEventListener('input', updateProgress);
+    const maxRating = 5; // أقصى تقييم
+    const circleCircumference = 2 * Math.PI * 110; // محيط الدائرة (r = 110)
 
+    // تحديث التقييم
+    function updateRating(rating) {
+      if (rating < 0 || rating > maxRating) {
+        console.error("التقييم يجب أن يكون بين 0 و 5");
+        return;
+      }
 
+      // حساب الامتلاء بناءً على التقييم
+      const offset = circleCircumference - (rating / maxRating) * circleCircumference;
+
+      // تحديث مظهر الدائرة
+      circle.style.strokeDashoffset = offset;
+    }
+    setTimeout(() => updateRating(3.5), 1000); // تغيير التقييم بعد ثانية
