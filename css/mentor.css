@@ -89,7 +89,7 @@ h2 {
 #top-nav ul {
     border-radius: 3.5rem;
     border: 1px solid var(--sixth);
-    padding: 16px 16px;
+    padding: 0.7rem 0.5rem;
     gap: 24px;
     font-size: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -120,6 +120,7 @@ h2 {
 }
 
 .s-active {
+    
     color: var(--second);
     font-size: 24px;
     font-weight: 600;
@@ -411,10 +412,10 @@ button.show-more {
 
  .card {
     border-radius: 5px;
-    border: 1px solid #98A2B3;
+    border-bottom: 1px solid #98A2B3;
     background-color: #F9FAFB;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
     margin-bottom: 3rem;
 }
 .section-coaching .card {
@@ -428,6 +429,7 @@ button.show-more {
     
 }
 .details-icon a {
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -456,7 +458,7 @@ button.show-more {
     margin: 10px 0;
     font-size: 0.9rem;
     color: #000;
-    gap: 10px;
+    gap: 8px;
 }
 
 
@@ -656,10 +658,12 @@ button.show-more {
 
     #bar {
         display: block;
+        cursor: pointer;
     }
     #mobile-nav{
         right: 120%;
         transition: all .6s ease-in-out;
+        
     }
     #mobile-nav.active{
         background: #000000ed;
@@ -680,15 +684,15 @@ button.show-more {
         padding-bottom: 16px;
     }
     #mobile-nav ul li a{
+        
         font-size: 18px;
         color: white;
     }
     .s-active::after {
         content: "";
         position: absolute;
-        bottom: -17px;
         right: 0;
-        top: 190%;
+        top: 155%;
         width: 100%;
         height: 2px;
         background: var(--second);
@@ -699,11 +703,11 @@ button.show-more {
     .container .logo-img{
         display: block;
         width: 5rem;
-        height: 20px;
+        height: 1.4rem;
     }
     
     .s-active {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     a {
@@ -745,6 +749,8 @@ button.show-more {
     }
     .card .details-icon a{
         padding-left: 0.9rem;
+        font-size: 1rem;
+        gap: 0.3rem;
     }
     
 /* -------------------------------------------------------------------------- */
@@ -772,18 +778,19 @@ button.show-more {
 }
 .card .actions .btn-start{
     font-size: 14px;
+    padding: 8px 4px;
 }
 .card .actions .btn-message{
     font-size: 14px;
-
+    padding: 8px 4px;
 }
 .card .actions .btn-cancel{
     font-size: 14px;
-
+    padding: 8px 4px;
 }
 .card .actions .btn-edit{
     font-size: 14px;
-
+    padding: 8px 4px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -792,7 +799,6 @@ button.show-more {
 .section-coaching .card{
     width: 100%;
     padding-right: 2rem;
-
 }
 
 
